@@ -67,9 +67,10 @@ include_directories(
 add_executable(kessel
 			   src/gui.cpp
 			   src/main.cpp
+			   src/simulation.cpp
 		       src/display.cpp
 			   src/kessel.h
-)
+ "src/simulation.cpp")
 
 # Set all of the libraries so that the linker knows where to find them
 target_link_libraries(kessel

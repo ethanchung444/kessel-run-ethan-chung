@@ -56,7 +56,9 @@ void load_gravity(const char* filename) {
 		gy.push_back(y);
 		m.push_back(mass);
 	}
+
 }
+
 
 void dummy_data(int G = 10, int P = 100) {
 
@@ -160,7 +162,7 @@ int main(int argc, const char* argv[]) {
 	if (argc > 1) load_gravity(argv[1]);
 	else dummy_data();
 
-
+	run_kessel_simulations();   // <-- ADD THIS LINE (runs ~400 Monte-Carlo simulations)
 	/*
 	* This is what we call the "main rendering loop" (sometimes in gaming you'll call it the "main game loop".
 	* This is where everything in the program happens. Every iteration through the loop re-draws everything
