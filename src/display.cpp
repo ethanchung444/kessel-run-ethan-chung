@@ -59,8 +59,9 @@ void PlotPaths(std::vector<float>& gx, std::vector<float>& gy,
                     ImPlotProp_FillAlpha, 0.3f
                 });
         }
+        ImPlot::EndPlot();
     }
-    ImPlot::EndPlot();
+    
 
     ImGui::End();
 }
